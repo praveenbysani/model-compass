@@ -62,10 +62,10 @@ fixed price bands. `model-categories.csv` stores editable analytical assignments
 `models.csv` includes the category as a generated convenience column. A blank
 `series_id` keeps a model in the catalogue but out of the selected chart paths.
 
-The category chart orders Complex/Professional, Efficient/General-Purpose,
-Fast/High-Volume and Most Demanding. That order is editorial, not a measured
-popularity ranking. It uses category-specific linear dollar ranges. Most
-Demanding starts at $20; the other panels start at zero. Initial company panels
+The category chart orders Complex Work, Everyday Work, High Volume and
+Deep Reasoning. That order is editorial, not a measured
+popularity ranking. It uses category-specific linear dollar ranges. Deep
+Reasoning starts at $20; the other panels start at zero. Initial company panels
 share a logarithmic range; equally spaced ticks represent multiplicative changes.
 
 Both charts reconstruct the same 175 anchors from the 77 source quotes and
@@ -83,7 +83,7 @@ Named GPT Pro variants and Astra remain separate offers.
 Legend filtering hides owned annotations and rescales only the affected panel;
 the date window stays fixed. Narrow layouts move endpoint labels below the plot,
 and suppress historical labels when no clear placement is available. All points
-remain accessible through hover. “My take” boxes are opinions and conditional
+remain accessible through hover. Shaded callouts are opinions and conditional
 forecasts, authored for the initial snapshot; they do not automatically update
 when data or legend selection changes.
 

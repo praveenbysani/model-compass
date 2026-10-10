@@ -6,6 +6,7 @@ import calendar
 import html
 import json
 import math
+import re
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -50,7 +51,8 @@ def price_paths(root: Path, settings: dict) -> dict[str, list[dict]]:
                     'point_kind': 'latest_selection' if day == settings['as_of'] else 'quarterly_selection'}
         for row in selected.values():
             model = models[row['model_id']]
-            row.update(model_name=model['model_name'], context_window_tokens=model['context_window_tokens'],
+            row.update(model_name=model['model_name'], release_date=model['release_date'],
+                       context_window_tokens=model['context_window_tokens'],
                        context_definition=model['context_definition'], context_spec_date=model['context_spec_date'],
                        release_source_url=model['release_source_url'])
             row['release_marker'] = model['release_kind'] == 'named_release' and row['event_type'] == 'launch' and (
@@ -64,12 +66,22 @@ def trace_for(series: dict, rows: list[dict], view: str) -> dict:
     name = series['company'] + ' · ' + series['label'] if view == 'category' else series['label']
     hover = []
     for row in rows:
-        event = 'Model release' if row['release_marker'] else 'Price observation / selection'
-        text = f'<b>{html.escape(row["model_name"])}</b><br>{event}: {row["plot_date"]}'
-        text += f'<br>${row["output_usd_per_million"]} / 1M output tokens'
-        text += f'<br>Source quote date: {row["price_date"]}<br>{html.escape(row["pricing_conditions"])}'
-        if row['note']:
-            text += '<br>' + html.escape(row['note'])
+        text = f'<b>{html.escape(row["model_name"])} · {html.escape(series["company"])}</b>'
+        text += f'<br>Release: {row["release_date"]}'
+        text += f'<br>Output: ${row["output_usd_per_million"]} / 1M tokens'
+        text += f'<br>Input: ${row["input_usd_per_million"]} / 1M tokens'
+        if row['context_window_tokens']:
+            context = f'{int(row["context_window_tokens"]):,} tokens'
+            # Input-only limits are not interchangeable with total context windows.
+            if row['context_definition'] == 'provider_input_token_limit':
+                context += ' (input limit)'
+        else:
+            context = 'Not verified'
+        text += f'<br>Context: {context}'
+        if row['price_date'] != row['release_date']:
+            text += f'<br>Price date: {row["price_date"]}'
+        if row['plot_date'] != row['price_date']:
+            text += f'<br>Selected at: {row["plot_date"]}'
         hover.append(text)
     return {'x': [r['plot_date'] for r in rows], 'y': [float(r['output_usd_per_million']) for r in rows],
         'name': name, 'mode': 'lines+markers', 'showlegend': True, 'legendgroup': series['id'],
@@ -140,7 +152,7 @@ main{max-width:1440px;margin:auto;padding:36px 28px 44px}h1{font-size:34px;line-
 .category{margin-bottom:60px}h2{font-size:29px;line-height:1.2;margin:0 0 6px}
 .subtitle{font-size:18px;color:#62666b;line-height:1.4;margin:0 0 22px}
 .take{background:#eef4fa;border:1px solid #dce7f1;color:#34495e;padding:20px 24px;margin-bottom:12px}
-.take h3{font-size:20px;margin:0 0 8px}.take p{font-size:20px;line-height:1.45;margin:0}.take p+p{margin-top:14px}
+.take p{font-size:20px;line-height:1.45;margin:0}.take p+p{margin-top:14px}
 .chart{width:100%;height:650px}.latest{display:flex;flex-wrap:wrap;gap:18px 30px;font-size:16px;line-height:1.5;padding:0 20px 10px 100px}
 [hidden]{display:none!important}.notes{border-top:1px solid #e5e9ed;padding-top:24px;font-size:17px;line-height:1.5}
 .notes h2{font-size:24px;margin-bottom:14px}.notes ul{margin:0;padding-left:22px}.notes li{margin-bottom:8px}
@@ -153,7 +165,10 @@ def page_html(root: Path, title: str, panels: list[dict], settings: dict, paths:
     for panel in panels:
         take = ''
         if panel.get('take'):
-            take = '<aside class="take"><h3>My take</h3>' + ''.join('<p>'+html.escape(t)+'</p>' for t in panel['take']) + '</aside>'
+            # Escape authored text first; support only explicit **bold** emphasis.
+            paragraphs = [re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', html.escape(t))
+                          for t in panel['take']]
+            take = '<aside class="take">' + ''.join('<p>'+t+'</p>' for t in paragraphs) + '</aside>'
         summaries = []
         for i, t in enumerate(panel['base']['data']):
             row = paths[t['legendgroup']][-1]

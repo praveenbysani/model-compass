@@ -20,7 +20,7 @@ refreshes and alerts are planned.
 Download either HTML file and open it in a browser. The charts include their data
 and Plotly runtime, so they work offline. Click a legend item to hide/show a family;
 double-click to isolate it. Filtering rescales that panel and updates its labels.
-The date window stays fixed. “My take” boxes are the author's interpretation.
+The date window stays fixed. Shaded callouts contain the author's interpretation.
 
 For web links in a LinkedIn post, enable GitHub Pages for the repository's main
 branch and root folder. The included `index.html` links to both charts. See
@@ -86,6 +86,9 @@ currently manual; these scripts reproduce normalization and chart generation.
 
 ## Contribute
 
+Read the [Contribution Guidelines and Code of Conduct](CONTRIBUTING.md)
+before opening an issue or pull request.
+
 Corrections, missing historical quotes, additional models and reproducible
 evaluations are welcome. Open an issue or pull request with the source URL,
 relevant date, exact model version and any pricing/evaluation conditions.
@@ -112,6 +115,6 @@ score in this release.
 
 ## Licence
 
-Code: [MIT](LICENSE). Dataset compilation: [CC BY 4.0](DATA_LICENSE.md).
-Provider evidence remains linked and attributed. Embedded Plotly.js notices are
-documented in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Code and documentation use MIT; the dataset compilation uses CC BY 4.0.
+See [LICENSE](LICENSE) for both sets of terms and the embedded Plotly.js notices.
+Provider evidence remains linked and attributed.
