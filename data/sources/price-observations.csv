@@ -1,0 +1,78 @@
+provider,family,date,model,input_usd_per_million,output_usd_per_million,price_source,event,note,product_line
+Anthropic,Haiku,2024-03-13,Haiku 3,0.25,1.25,https://www.anthropic.com/news/claude-3-family,release,,Haiku
+Anthropic,Haiku,2024-12-03,Haiku 3.5 (December rate),0.8,4.0,https://claude.com/resources/articles/trainium2-and-distillation,observation,Initial November launch rate is omitted because it was not independently recovered; this December rate is documented after a price cut.,Haiku
+Anthropic,Haiku,2025-10-15,Haiku 4.5,1.0,5.0,https://www.anthropic.com/news/claude-haiku-4-5,release,,Haiku
+Anthropic,Haiku,2026-10-07,Haiku 5.5,0.1,0.5,https://www.anthropic.com/claude-haiku-5-5,release,"Applies to prompts up to 100,000 tokens; higher rates above that threshold.",Haiku
+Anthropic,Sonnet,2024-03-04,Sonnet 3,3.0,15.0,https://www.anthropic.com/news/claude-3-family,release,,Sonnet
+Anthropic,Sonnet,2024-06-20,Sonnet 3.5,3.0,15.0,https://www.anthropic.com/news/claude-3-5-sonnet,release,,Sonnet
+Anthropic,Sonnet,2024-10-22,Sonnet 3.5 upgraded,3.0,15.0,https://www.anthropic.com/news/3-5-models-and-computer-use,snapshot,,Sonnet
+Anthropic,Sonnet,2025-02-24,Sonnet 3.7,3.0,15.0,https://www.anthropic.com/news/claude-3-7-sonnet,release,,Sonnet
+Anthropic,Sonnet,2025-05-22,Sonnet 4,3.0,15.0,https://www.anthropic.com/news/claude-4,release,,Sonnet
+Anthropic,Sonnet,2025-09-29,Sonnet 4.5,3.0,15.0,https://www.anthropic.com/news/claude-sonnet-4-5,release,,Sonnet
+Anthropic,Sonnet,2026-02-17,Sonnet 4.6,3.0,15.0,https://www.anthropic.com/news/claude-sonnet-4-6,release,,Sonnet
+Anthropic,Sonnet,2026-06-30,Sonnet 5,2.0,10.0,https://www.anthropic.com/news/claude-sonnet-5,release,Introductory price made permanent on August 10.,Sonnet
+Anthropic,Sonnet,2026-09-28,Sonnet 5.5,2.0,10.0,https://platform.claude.com/docs/en/about-claude/pricing,release,,Sonnet
+Anthropic,Fable,2026-06-09,Fable 5,10.0,50.0,https://platform.claude.com/docs/en/about-claude/pricing,release,,Fable
+Anthropic,Fable,2026-09-01,Fable 5.1,10.0,50.0,https://platform.claude.com/docs/en/release-notes/overview,release,Base rates unchanged; cache-read price fell.,Fable
+Anthropic,Opus,2024-03-04,Opus 3,15.0,75.0,https://www.anthropic.com/news/claude-3-family,release,,Opus
+Anthropic,Opus,2025-05-22,Opus 4,15.0,75.0,https://www.anthropic.com/news/claude-4,release,,Opus
+Anthropic,Opus,2025-08-05,Opus 4.1,15.0,75.0,https://www.anthropic.com/news/claude-opus-4-1,release,,Opus
+Anthropic,Opus,2025-11-24,Opus 4.5,5.0,25.0,https://www.anthropic.com/news/claude-opus-4-5,release,,Opus
+Anthropic,Opus,2026-02-05,Opus 4.6,5.0,25.0,https://www.anthropic.com/news/claude-opus-4-6,release,,Opus
+Anthropic,Opus,2026-04-16,Opus 4.7,5.0,25.0,https://platform.claude.com/docs/en/release-notes/overview,release,,Opus
+Anthropic,Opus,2026-05-28,Opus 4.8,5.0,25.0,https://platform.claude.com/docs/en/about-claude/pricing,release,,Opus
+Anthropic,Opus,2026-07-24,Opus 5,5.0,25.0,https://platform.claude.com/docs/en/release-notes/overview,release,,Opus
+Anthropic,Opus,2026-09-22,Opus 5.5,4.0,20.0,https://platform.claude.com/docs/en/release-notes/overview,release,,Opus
+Google,Lite / 8B,2024-10-03,Gemini 1.5 Flash-8B,0.0375,0.15,https://developers.googleblog.com/en/gemini-15-flash-8b-is-now-generally-available-for-use/,release,Announced paid rate; billing began October 14.,Flash-Lite / 8B
+Google,Lite / 8B,2025-02-25,Gemini 2.0 Flash-Lite,0.075,0.3,https://developers.googleblog.com/en/gemini-2-family-expands/,release,,Flash-Lite / 8B
+Google,Lite / 8B,2025-07-22,Gemini 2.5 Flash-Lite,0.1,0.4,https://ai.google.dev/gemini-api/docs/pricing,release,,Flash-Lite / 8B
+Google,Lite / 8B,2026-05-07,Gemini 3.1 Flash-Lite,0.25,1.5,https://ai.google.dev/gemini-api/docs/pricing,release,,Flash-Lite / 8B
+Google,Lite / 8B,2026-07-21,Gemini 3.5 Flash-Lite,0.3,2.5,https://ai.google.dev/gemini-api/docs/generate-content/whats-new-gemini-3.6,release,,Flash-Lite / 8B
+Google,Flash,2024-08-08,Gemini 1.5 Flash,0.35,1.05,https://developers.googleblog.com/en/gemini-15-flash-updates-google-ai-studio-gemini-api/,observation,Old rate shown in the August announcement; GA launch May 23. Earlier price history not asserted.,Flash
+Google,Flash,2024-08-12,Gemini 1.5 Flash price cut,0.075,0.3,https://developers.googleblog.com/en/gemini-15-flash-updates-google-ai-studio-gemini-api/,cut,,Flash
+Google,Flash,2025-02-05,Gemini 2.0 Flash,0.1,0.4,https://developers.googleblog.com/en/gemini-2-family-expands/,release,,Flash
+Google,Flash,2025-06-17,Gemini 2.5 Flash,0.3,2.5,https://developers.googleblog.com/gemini-2-5-thinking-model-updates/,release,,Flash
+Google,Flash,2025-12-17,Gemini 3 Flash preview,0.5,3.0,https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-flash/,release,Paid public preview.,Flash
+Google,Flash,2026-05-19,Gemini 3.5 Flash,1.5,9.0,https://ai.google.dev/gemini-api/docs/pricing,release,,Flash
+Google,Flash,2026-08-13,Gemini 3.7 Flash,0.75,3.75,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/,release,"Introductory rate through December 31, 2026.",Flash
+Google,Flash,2026-09-02,Gemini 3.8 Flash,0.75,3.75,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,release,"Introductory rate through December 31, 2026; scheduled rate then doubles.",Flash
+Google,Pro,2024-09-24,Gemini 1.5 Pro,3.5,10.5,https://developers.googleblog.com/en/updated-gemini-models-reduced-15-pro-pricing-increased-rate-limits-and-more/,observation,Old rate shown in the September announcement; earlier price history not asserted.,Pro
+Google,Pro,2024-10-01,Gemini 1.5 Pro price cut,1.25,5.0,https://developers.googleblog.com/en/updated-gemini-models-reduced-15-pro-pricing-increased-rate-limits-and-more/,cut,,Pro
+Google,Pro,2025-06-17,Gemini 2.5 Pro,1.25,10.0,https://ai.google.dev/gemini-api/docs/pricing,release,Stable API version; earlier experimental/preview versions omitted.,Pro
+Google,Pro,2025-11-18,Gemini 3 Pro preview,2.0,12.0,https://blog.google/innovation-and-ai/technology/developers-tools/gemini-3-developers/,release,"Paid public preview, prompts up to 200K tokens.",Pro
+Google,Pro,2026-02-19,Gemini 3.1 Pro preview,2.0,12.0,https://ai.google.dev/gemini-api/docs/pricing,release,Public preview; prompts up to 200K tokens.,Pro
+OpenAI,Small models,2024-07-18,GPT-4o mini,0.15,0.6,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,release,,GPT mini → Terra
+OpenAI,Small models,2025-04-14,GPT-4.1 nano,0.1,0.4,https://openai.com/index/gpt-4-1/,release,Selected small-model option; not a capability-equivalent replacement for mini.,GPT nano → Luna
+OpenAI,Small models,2025-08-07,GPT-5 nano,0.05,0.4,https://openai.com/index/introducing-gpt-5-for-developers/,release,,GPT nano → Luna
+OpenAI,Small models,2026-07-09,GPT-5.6 Luna,1.0,6.0,https://openai.com/index/gpt-5-6/,release,,GPT nano → Luna
+OpenAI,Small models,2026-07-30,GPT-5.6 Luna price cut,0.2,1.2,https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/,cut,,GPT nano → Luna
+OpenAI,Small models,2026-09-22,GPT-6 Luna,0.1,0.5,https://openai.com/index/introducing-gpt-6-sol-and-luna/,release,,GPT nano → Luna
+OpenAI,GPT,2023-11-06,GPT-4 Turbo preview,10.0,30.0,https://openai.com/index/new-models-and-developer-products-announced-at-devday/,release,Public priced preview.,Standard GPT → Sol
+OpenAI,GPT,2024-05-13,GPT-4o,5.0,15.0,https://community.openai.com/t/announcing-gpt-4o-in-the-api/744700,release,,Standard GPT → Sol
+OpenAI,GPT,2024-08-06,GPT-4o (Aug snapshot),2.5,10.0,https://openai.com/index/api-prompt-caching/,snapshot,New snapshot; not an automatic price cut on the May endpoint.,Standard GPT → Sol
+OpenAI,GPT,2025-04-14,GPT-4.1,2.0,8.0,https://openai.com/index/gpt-4-1/,release,,Standard GPT → Sol
+OpenAI,GPT,2025-08-07,GPT-5,1.25,10.0,https://openai.com/index/introducing-gpt-5-for-developers/,release,,Standard GPT → Sol
+OpenAI,GPT,2025-11-13,GPT-5.1,1.25,10.0,https://openai.com/index/gpt-5-1-for-developers/,release,,Standard GPT → Sol
+OpenAI,GPT,2025-12-11,GPT-5.2,1.75,14.0,https://openai.com/index/introducing-gpt-5-2/,release,,Standard GPT → Sol
+OpenAI,GPT,2026-03-05,GPT-5.4,2.5,15.0,https://openai.com/index/introducing-gpt-5-4/,release,,Standard GPT → Sol
+OpenAI,GPT,2026-04-24,GPT-5.5,5.0,30.0,https://openai.com/index/introducing-gpt-5-5/,release,"API availability is April 24, after the April 23 product announcement.",Standard GPT → Sol
+OpenAI,Sol,2026-07-09,GPT-5.6 Sol,5.0,30.0,https://openai.com/index/gpt-5-6/,release,,Standard GPT → Sol
+OpenAI,Sol,2026-08-21,GPT-5.6 Sol promotion,4.0,20.0,https://openai.com/index/introducing-gpt-6-sol-and-luna/,cut,Previous-generation promotional rate; not permanent.,Standard GPT → Sol
+OpenAI,Sol,2026-09-22,GPT-6 Sol,2.0,10.0,https://openai.com/index/introducing-gpt-6-sol-and-luna/,release,,Standard GPT → Sol
+OpenAI,Sol,2026-09-29,GPT-6.1 Sol,2.0,10.0,https://developers.openai.com/api/docs/pricing,release,,Standard GPT → Sol
+OpenAI,o-series,2024-10-01,o1-preview,15.0,60.0,https://openai.com/index/api-prompt-caching/,observation,Price verified in the October 1 announcement; launched September 12.,o-series
+OpenAI,o-series,2024-12-17,o1,15.0,60.0,https://developers.openai.com/api/docs/pricing,release,Rate corroborated by OpenAI model pricing; release from the API changelog.,o-series
+OpenAI,o-series,2025-04-16,o3,10.0,40.0,https://community.openai.com/t/o3-is-80-cheaper-and-introducing-o3-pro/1284925,release,Prior rates recovered from the exact 80% June reduction to $2/$8.,o-series
+OpenAI,Pro,2025-06-10,o3-pro,20.0,80.0,https://community.openai.com/t/o3-is-80-cheaper-and-introducing-o3-pro/1284925,release,Named API release; standard short-prompt price.,o-series
+OpenAI,Pro,2025-10-06,GPT-5 Pro,15.0,120.0,https://developers.openai.com/api/docs/models/gpt-5-pro,release,Named API release; standard short-prompt price.,GPT Pro
+OpenAI,Pro,2025-12-11,GPT-5.2 Pro,21.0,168.0,https://openai.com/index/introducing-gpt-5-2/,release,Named API release; standard short-prompt price.,GPT Pro
+OpenAI,Pro,2026-03-05,GPT-5.4 Pro,30.0,180.0,https://openai.com/index/introducing-gpt-5-4/,release,Named API release; standard short-prompt price.,GPT Pro
+OpenAI,Pro,2026-04-24,GPT-5.5 Pro,30.0,180.0,https://openai.com/index/introducing-gpt-5-5/,release,Named API release; standard short-prompt price.,GPT Pro
+OpenAI,Astra,2026-09-03,GPT-6 Astra,10.0,50.0,https://developers.openai.com/api/docs/pricing,release,,Astra
+OpenAI,o-series,2025-06-10,o3 price cut,2.0,8.0,https://community.openai.com/t/o3-is-80-cheaper-and-introducing-o3-pro/1284925,cut,,o-series
+OpenAI,Terra,2026-10-10,GPT-5.6 Terra,2.0,12.0,https://developers.openai.com/api/docs/models/gpt-5.6-terra,observation,Current rate verified 10 October; July 30 rate is independently established by the price-cut announcement.,GPT mini → Terra
+OpenAI,Mini,2025-08-07,GPT-5 mini,0.25,2.0,https://openai.com/index/introducing-gpt-5-for-developers/,release,Rate established by the dated provider announcement.,GPT mini → Terra
+OpenAI,Mini,2026-03-17,GPT-5.4 mini,0.75,4.5,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,release,Rate established by the dated provider announcement.,GPT mini → Terra
+OpenAI,Nano,2026-03-17,GPT-5.4 nano,0.2,1.25,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,release,Rate established by the dated provider announcement.,GPT nano → Luna
+OpenAI,Terra,2026-07-09,GPT-5.6 Terra,2.5,15.0,https://openai.com/index/gpt-5-6/,release,Rate established by the dated provider announcement.,GPT mini → Terra
+OpenAI,Terra,2026-07-30,GPT-5.6 Terra price cut,2.0,12.0,https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/,cut,Rate established by the dated provider announcement.,GPT mini → Terra

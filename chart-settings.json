@@ -1,0 +1,522 @@
+{
+  "as_of": "2026-10-10",
+  "category_title": "The Evolution of AI Model Pricing",
+  "company_title": "Output prices: where each family started, and where it is now",
+  "categories": [
+    {
+      "id": "complex",
+      "title": "Complex Work",
+      "subtitle": "Coding, analysis and demanding business workflows",
+      "take": [
+        "The widely used Opus and Sol families anchor this revenue engine category, with price competition intensifying over the past month as OpenAI and Anthropic battle for enterprise market share.",
+        "Opus pricing has fallen **73% since 2024** yet **it still commands 2x** **Sol** after OpenAI’s September 2026 price reset."
+      ],
+      "range": [
+        0,
+        90
+      ],
+      "ticks": [
+        0,
+        20,
+        40,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "efficient",
+      "title": "Everyday Work",
+      "subtitle": "Everyday tasks balancing capability and cost",
+      "take": [
+        "OpenAI has moved upmarket gradually, while Anthropic’s **$15 → $10** reset now undercuts OpenAI’s **$12** offering.",
+        "Google is pushing hardest on price at **$3.75**; even its scheduled **$7.50 rate from January 2027** would remain below both."
+      ],
+      "range": [
+        0,
+        18
+      ],
+      "ticks": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ]
+    },
+    {
+      "id": "fast",
+      "title": "High Volume",
+      "subtitle": "Focused tasks where response time and cost matter",
+      "take": [
+        "This category still seems to get less attention, but Anthropic’s **90% reduction ($5 → $0.50)** has levelled the playing field with OpenAI.",
+        "Google’s Flash-Lite rate is now **5× higher at $2.50**. I’d expect Google to respond with a price cut."
+      ],
+      "range": [
+        0,
+        7.2
+      ],
+      "ticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "demanding",
+      "title": "Deep Reasoning",
+      "subtitle": "Difficult, open-ended problems requiring extended reasoning",
+      "take": [
+        "This category looks like a way to preserve premium pricing as competition intensifies elsewhere in other categories.",
+        "I expect demand to remain concentrated in specialist work until results justify the premium rates.",
+        "The expensive Pro line is less relevant as OpenAI starts to offer deeper reasoning through configurable levels in newer model families."
+      ],
+      "range": [
+        20,
+        220
+      ],
+      "ticks": [
+        20,
+        50,
+        100,
+        150,
+        200
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "openai-gpt-sol",
+      "company": "OpenAI",
+      "source_path": "Standard GPT → Sol",
+      "category": "Complex Work",
+      "label": "GPT → Sol",
+      "symbol": "circle",
+      "category_color": "#171717",
+      "company_color": "#303030",
+      "dash": "solid"
+    },
+    {
+      "id": "openai-mini-terra",
+      "company": "OpenAI",
+      "source_path": "GPT mini → Terra",
+      "category": "Everyday Work",
+      "label": "GPT mini → Terra",
+      "symbol": "square",
+      "category_color": "#171717",
+      "company_color": "#555555",
+      "dash": "solid"
+    },
+    {
+      "id": "openai-nano-luna",
+      "company": "OpenAI",
+      "source_path": "GPT nano → Luna",
+      "category": "High Volume",
+      "label": "GPT nano → Luna",
+      "symbol": "triangle-up",
+      "category_color": "#171717",
+      "company_color": "#777777",
+      "dash": "solid"
+    },
+    {
+      "id": "openai-pro",
+      "company": "OpenAI",
+      "source_path": "GPT Pro",
+      "category": "Deep Reasoning",
+      "label": "Pro variants",
+      "symbol": "diamond",
+      "category_color": "#171717",
+      "company_color": "#111111",
+      "dash": "dash"
+    },
+    {
+      "id": "openai-astra",
+      "company": "OpenAI",
+      "source_path": "Astra",
+      "category": "Deep Reasoning",
+      "label": "Astra",
+      "symbol": "star",
+      "category_color": "#171717",
+      "company_color": "#111111",
+      "dash": "solid"
+    },
+    {
+      "id": "anthropic-opus",
+      "company": "Anthropic",
+      "source_path": "Opus",
+      "category": "Complex Work",
+      "label": "Opus",
+      "symbol": "circle",
+      "category_color": "#C55B28",
+      "company_color": "#B44D1E",
+      "dash": "solid"
+    },
+    {
+      "id": "anthropic-sonnet",
+      "company": "Anthropic",
+      "source_path": "Sonnet",
+      "category": "Everyday Work",
+      "label": "Sonnet",
+      "symbol": "square",
+      "category_color": "#C55B28",
+      "company_color": "#C46A3B",
+      "dash": "solid"
+    },
+    {
+      "id": "anthropic-haiku",
+      "company": "Anthropic",
+      "source_path": "Haiku",
+      "category": "High Volume",
+      "label": "Haiku",
+      "symbol": "triangle-up",
+      "category_color": "#C55B28",
+      "company_color": "#C9835D",
+      "dash": "solid"
+    },
+    {
+      "id": "anthropic-fable",
+      "company": "Anthropic",
+      "source_path": "Fable",
+      "category": "Deep Reasoning",
+      "label": "Fable",
+      "symbol": "diamond",
+      "category_color": "#C55B28",
+      "company_color": "#8A3515",
+      "dash": "dash"
+    },
+    {
+      "id": "google-pro",
+      "company": "Google",
+      "source_path": "Pro",
+      "category": "Complex Work",
+      "label": "Pro",
+      "symbol": "square",
+      "category_color": "#2873C9",
+      "company_color": "#1E55A0",
+      "dash": "solid"
+    },
+    {
+      "id": "google-flash",
+      "company": "Google",
+      "source_path": "Flash",
+      "category": "Everyday Work",
+      "label": "Flash",
+      "symbol": "square",
+      "category_color": "#2873C9",
+      "company_color": "#3979CD",
+      "dash": "solid"
+    },
+    {
+      "id": "google-flash-lite",
+      "company": "Google",
+      "source_path": "Flash-Lite / 8B",
+      "category": "High Volume",
+      "label": "Flash-Lite",
+      "symbol": "triangle-up",
+      "category_color": "#2873C9",
+      "company_color": "#6695D3",
+      "dash": "solid"
+    }
+  ],
+  "annotations": [
+    {
+      "series_id": "openai-gpt-sol",
+      "plot_date": "2023-11-06",
+      "text": "GPT-4 Turbo preview<br><b>$30</b>",
+      "ax": 60,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-gpt-sol",
+      "plot_date": "2024-08-06",
+      "text": "GPT-4o<br><b>$10</b>",
+      "ax": 0,
+      "ay": -60,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-gpt-sol",
+      "plot_date": "2026-04-24",
+      "text": "GPT-5.5<br><b>$30</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "anthropic-opus",
+      "plot_date": "2024-03-04",
+      "text": "Opus 3<br><b>$75</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "anthropic-opus",
+      "plot_date": "2025-11-24",
+      "text": "Opus 4.5<br><b>$25</b>",
+      "ax": -60,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "google-pro",
+      "plot_date": "2024-09-24",
+      "text": "Gemini 1.5 Pro<br><b>$10.5</b>",
+      "ax": 0,
+      "ay": -125,
+      "endpoint": false
+    },
+    {
+      "series_id": "google-pro",
+      "plot_date": "2025-06-17",
+      "text": "Gemini 2.5 Pro<br><b>$10</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-gpt-sol",
+      "plot_date": "2026-10-10",
+      "text": "<b>OpenAI · GPT-6.1 Sol</b><br>$10",
+      "ax": 55,
+      "ay": 0.0,
+      "endpoint": true
+    },
+    {
+      "series_id": "google-pro",
+      "plot_date": "2026-10-10",
+      "text": "<b>Google · 3.1 Pro preview</b><br>$12",
+      "ax": 55,
+      "ay": -56.34972222222221,
+      "endpoint": true
+    },
+    {
+      "series_id": "anthropic-opus",
+      "plot_date": "2026-10-10",
+      "text": "<b>Anthropic · Opus 5.5</b><br>$20",
+      "ax": 55,
+      "ay": -86.74861111111109,
+      "endpoint": true
+    },
+    {
+      "series_id": "openai-mini-terra",
+      "plot_date": "2024-07-18",
+      "text": "GPT-4o mini<br><b>$0.6</b>",
+      "ax": 0,
+      "ay": -90,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-mini-terra",
+      "plot_date": "2026-07-09",
+      "text": "GPT-5.6 Terra<br><b>$15</b>",
+      "ax": -220,
+      "ay": 45,
+      "endpoint": false
+    },
+    {
+      "series_id": "anthropic-sonnet",
+      "plot_date": "2024-03-04",
+      "text": "Sonnet 3<br><b>$15</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "google-flash",
+      "plot_date": "2024-08-08",
+      "text": "Gemini 1.5 Flash<br><b>$1.05</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "google-flash",
+      "plot_date": "2026-05-19",
+      "text": "Gemini 3.5 Flash<br><b>$9</b>",
+      "ax": -60,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "google-flash",
+      "plot_date": "2026-10-10",
+      "text": "<b>Google · 3.8 Flash</b><br>$3.75 · introductory",
+      "ax": 55,
+      "ay": 0.0,
+      "endpoint": true
+    },
+    {
+      "series_id": "anthropic-sonnet",
+      "plot_date": "2026-10-10",
+      "text": "<b>Anthropic · Sonnet 5.5</b><br>$10",
+      "ax": 55,
+      "ay": 2.842170943040401e-14,
+      "endpoint": true
+    },
+    {
+      "series_id": "openai-mini-terra",
+      "plot_date": "2026-10-10",
+      "text": "<b>OpenAI · GPT-5.6 Terra</b><br>$12",
+      "ax": 55,
+      "ay": -21.748611111111074,
+      "endpoint": true
+    },
+    {
+      "series_id": "google-flash",
+      "plot_date": "2025-06-17",
+      "text": "Gemini 2.5 Flash",
+      "ax": 0,
+      "ay": -40,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-mini-terra",
+      "plot_date": "2025-08-07",
+      "text": "GPT-5 mini",
+      "ax": 0,
+      "ay": -90,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-nano-luna",
+      "plot_date": "2025-04-14",
+      "text": "GPT-4.1 nano<br><b>$0.4</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-nano-luna",
+      "plot_date": "2026-07-09",
+      "text": "GPT-5.6 Luna<br><b>$6</b>",
+      "ax": -120,
+      "ay": -45,
+      "endpoint": false
+    },
+    {
+      "series_id": "anthropic-haiku",
+      "plot_date": "2024-03-13",
+      "text": "Haiku 3<br><b>$1.25</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "anthropic-haiku",
+      "plot_date": "2025-10-15",
+      "text": "Haiku 4.5<br><b>$5</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "google-flash-lite",
+      "plot_date": "2024-10-03",
+      "text": "Gemini 1.5 Flash-8B<br><b>$0.15</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-nano-luna",
+      "plot_date": "2026-10-10",
+      "text": "<b>OpenAI · GPT-6 Luna</b><br>$0.5",
+      "ax": 55,
+      "ay": -12.967881944444443,
+      "endpoint": true
+    },
+    {
+      "series_id": "anthropic-haiku",
+      "plot_date": "2026-10-10",
+      "text": "<b>Anthropic · Haiku 5.5</b><br>$0.5",
+      "ax": 55,
+      "ay": -77.96788194444444,
+      "endpoint": true
+    },
+    {
+      "series_id": "google-flash-lite",
+      "plot_date": "2026-10-10",
+      "text": "<b>Google · 3.5 Flash-Lite</b><br>$2.5",
+      "ax": 55,
+      "ay": -34.83940972222223,
+      "endpoint": true
+    },
+    {
+      "series_id": "openai-pro",
+      "plot_date": "2025-10-06",
+      "text": "GPT-5 Pro<br><b>$120</b>",
+      "ax": 0,
+      "ay": 38,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-pro",
+      "plot_date": "2026-03-05",
+      "text": "GPT-5.4 Pro<br><b>$180</b>",
+      "ax": 0,
+      "ay": -28,
+      "endpoint": false
+    },
+    {
+      "series_id": "openai-astra",
+      "plot_date": "2026-09-03",
+      "text": "GPT-6 Astra<br><b>$50</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "anthropic-fable",
+      "plot_date": "2026-06-09",
+      "text": "Fable 5<br><b>$50</b>",
+      "ax": 0,
+      "ay": -38,
+      "endpoint": false
+    },
+    {
+      "series_id": "anthropic-fable",
+      "plot_date": "2026-10-10",
+      "text": "<b>Anthropic · Fable 5.1</b><br>$50",
+      "ax": 55,
+      "ay": 0.0,
+      "endpoint": true
+    },
+    {
+      "series_id": "openai-pro",
+      "plot_date": "2026-10-10",
+      "text": "<b>OpenAI · GPT-5.5 Pro</b><br>$180",
+      "ax": 55,
+      "ay": 0.0,
+      "endpoint": true
+    }
+  ],
+  "company_log_range": [
+    -1.2,
+    2.55
+  ],
+  "company_log_ticks": [
+    0.1,
+    0.3,
+    1,
+    3,
+    10,
+    30,
+    100,
+    300
+  ],
+  "notes": [
+    "Categories reflect intended use. Models in the same category can differ in quality and capability.",
+    "Prices are historical quotes at the dates shown, rather than today’s prices for every older model.",
+    "Dots mark selected model releases at verified launch prices. Lines also capture subsequent price changes.",
+    "Lines follow selected family versions. A cheaper successor doesn’t automatically reduce the older model’s price.",
+    "Context limits reflect available specifications, which may differ from those at launch."
+  ]
+}
